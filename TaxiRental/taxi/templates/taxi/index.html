@@ -1,0 +1,92 @@
+{% extends 'taxi/basic.html' %}
+
+{% block body %}
+{% load static %}
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px;">
+    <img class="campus" src='{% static "taxi/campus.jpg" %}' alt="Campus" style="min-width:1000px" width="1500"
+        height="800">
+    <div class="w3-display-left w3-padding w3-col 20 m16">
+        <div class="w3-container w3-red">
+            <h2><i class="fa fa-car w3-margin-right"></i>Rent a taxi for your ride</h2>
+        </div>
+        <div class="w3-container w3-white w3-padding-16">
+            <form action="" target="_blank">
+                <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-half w3-margin-bottom">
+                        <label>Source</label>
+                        <input class="w3-input w3-border" type="text" value="IIT Guwahati Campus" name="Source" readonly>
+                    </div>
+                    <div class="w3-half">
+                        <label>Destination</label>
+                        <select class="w3-input w3-border" id="Destination">
+                            <option>Panbazaar</option>
+                            <option>Jalukbari</option>
+                            <option>Airport</option>
+                            <option>PaltanBazaar</option>
+                            <option>GS Road</option>
+                            <option>Maligaon</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i>
+                    Search availability</button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1532px;">
+
+    <div class="w3-row-padding" id="about">
+        <div class="w3-col 25 12">
+            <h2><u>About :</u></h2>
+            <h4><b> This is the official taxi rental website which can be used exclusively by IIT Guwahati students.
+                        This web app is aimed at making life of the students simpler and avoiding last minute hassles in booking rides for destinations especially like Airport,Railway Station.
+                        Students can get discounts on rides.
+                        We accept payment through PayTM only.</b></h4>
+            <p><h3><u> We accept: </u></h3><img src='{% static "taxi/paytm.png" %}'></p>
+        </div>
+    </div>
+
+    <div class="w3-panel w3-red w3-leftbar w3-padding-24">
+        <h4><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i>This site is only for one way ride
+            exclusively for IITG students</h4>
+    </div>
+
+    <div class="w3-container">
+        <h2>Our Team</h2>
+        <h4><b>You can connect with them through Facebook</b></h4>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading"><strong>Adriraj Chaudhuri</strong></div>
+                    <div class="panel-body"><img src='{% static "taxi/adriraj.jpg" %}' class="img-responsive"
+                            style="width:100%" alt="Image"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading"><strong>Naman Goyal</strong></div>
+                    <div class="panel-body"><img src='{% static "taxi/naman.jpg" %}' class="img-responsive"
+                            style="width:100%" alt="Image"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading"><strong>Souvik Paul</strong></div>
+                    <div class="panel-body"><img src='{% static "taxi/souvik.jpg" %}' class="img-responsive"
+                            style="width:100%" alt="Image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}
+

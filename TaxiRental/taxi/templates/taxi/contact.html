@@ -1,0 +1,41 @@
+{% extends 'taxi/basic.html' %}
+
+{% block title %}Contact Page{% endblock %}
+
+{% block body %}
+<div class="w3-container" id="contact">
+        <h2>Contact</h2>
+    <p><h4>If you have any questions, do not hesitate to ask them.</h4></p>
+        <i class="fa fa-map-marker w3-text-red" style="width:30px"></i>         Guwahati, India      <br>
+        <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +91 9818121317<br>
+        <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: adrirajc@gmail.com, ng24645@gmail.com<br>
+        <br>
+        <form method ="post" action="/taxi/contact/">
+            {% csrf_token %}
+            <p><input class="w3-input w3-padding-12 w3-border" type="text" placeholder="Name" required name="Name">
+            </p>
+            <p><input class="w3-input w3-padding-12 w3-border" type="text" placeholder="Email" required name="Email">
+            </p>
+            <p><input class="w3-input w3-padding-12 w3-border" type="text" placeholder="Message" required
+                    name="Message"></p>
+            <p><button class="w3-button w3-red w3-padding-large" id="submit" type="submit">SEND MESSAGE</button></p>
+        </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}
+{% block js%}
+<script>
+{% if thank %}
+
+swal("We've got your feedback", "We will get back to you soon", "success");
+
+{% endif %}
+</script>
+{% endblock %}
