@@ -53,16 +53,16 @@
       <h3 class="w3-padding-64"><b>Dashboard</b></h3>
     </div>
     <div class="w3-bar-block">
-      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Rent Your Ride</a>
-      <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Cars Available</a>
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+      <h4 class="w3-padding-5"><b>Rent Your Car</b></h4>
+      <h4 class="w3-padding-5"><b>Cars Available</b></h4>
+      <h4 class="w3-padding-5"><b>Contact Us</b></h4>
     </div>
   </nav>
 
   <!-- Top menu on small screens -->
   <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
     <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-    <span>Company Name</span>
+    <span>IITG Taxi Rental</span>
   </header>
 
   <!-- Overlay effect when opening sidebar on small screens -->
@@ -75,57 +75,12 @@
     <!-- Header -->
     <div class="w3-container" style="margin-top:80px" id="showcase">
       <h1 class="w3-jumbo"><b>Rent your car</b></h1>
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </form>
+      <a class="btn btn-primary" href="/taxi/checkout/">Rent</a>
     </div>
 
     <!-- Services -->
     <div class="w3-container" id="cars" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Cars Available</b></h1>
+      <h1 class="w3-xxxlarge w3-text-black"><b>Cars Available</b></h1>
       <div class="row">
 
         <div class="col-lg-4 col-md-6 mb-4">
@@ -136,25 +91,37 @@
                 <strong>Swift Dzire</strong>
               </h4>
               <h5>Rs 15/Km</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+              <p class="card-text">
+              <ul>
+                <li>Spacious 4-seater car</li>
+                <li>Fully Air-Conditioned</li>
+                <li>Diesel Car</li>
+              </ul>
               </p>
             </div>
-            
+
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <img class="card-img-top" src="https://www.patratravels.com/tours/wp-content/uploads/2016/11/Innova-Cab-on-Hire-in-Bhubaneswar-Patra-Travels.jpg" alt="/">
+            <img class="card-img-top"
+              src="https://www.patratravels.com/tours/wp-content/uploads/2016/11/Innova-Cab-on-Hire-in-Bhubaneswar-Patra-Travels.jpg"
+              alt="/">
             <div class="card-body">
               <h4 class="card-title">
                 <strong>Innova</strong>
               </h4>
               <h5>Rs 20/Km</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-                Lorem ipsum dolor sit amet.</p>
+              <p class="card-text">
+              <ul>
+                <li>Comfortable & Spacious with 7-seater capacity</li>
+                <li>Air-Conditioned</li>
+                <li>Diesel Car</li>
+              </ul>
+              </p>
             </div>
-            
+
           </div>
         </div>
 
@@ -166,22 +133,33 @@
                 <strong>Maruti Alto</strong>
               </h4>
               <h5>Rs 10/Km</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+              <p class="card-text">
+              <ul>
+                <li>4-Seater Car</li>
+                <li>Non-AC Car</li>
+                <li>Petrol Car</li>
+              </ul>
               </p>
             </div>
-            
+
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <img class="card-img-top" src="https://5.imimg.com/data5/YO/NP/GLADMIN-21972283/tata-indica-500x500.png" alt="">
+            <img class="card-img-top" src="https://5.imimg.com/data5/YO/NP/GLADMIN-21972283/tata-indica-500x500.png"
+              alt="">
             <div class="card-body">
               <h4 class="card-title">
                 <strong>Indica</strong>
               </h4>
               <h5>Rs 15/Km</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+              <p class="card-text">
+              <ul>
+                <li>Spacious and Comfortable 4-seater</li>
+                <li>Air Conditioned</li>
+                <li>Petrol Car</li>
+              </ul>
               </p>
             </div>
           </div>
@@ -189,14 +167,23 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <img class="card-img-top" src="https://uberblogapi.10upcdn.com/1080x540/filters:format(webp)/blogapi.uber.com/wp-content/uploads/sites/71/2016/06/UberPOOL-Launch_Digital-Assets_Amber_blog_960x480_r1.png" alt="">
+            <img class="card-img-top"
+              src="https://uberblogapi.10upcdn.com/1080x540/filters:format(webp)/blogapi.uber.com/wp-content/uploads/sites/71/2016/06/UberPOOL-Launch_Digital-Assets_Amber_blog_960x480_r1.png"
+              alt="">
             <div class="card-body">
               <h4 class="card-title">
                 <strong>Carpool</strong>
               </h4>
               <h5>Rs 6/Km</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-                Lorem ipsum dolor sit amet.</p>
+              <p class="card-text">
+              <ul>
+                <li>Share your ride with 3 other people</li>
+                <li>Saves a hole in your pocket</li>
+                <li>You can reach out our Helpline number for more information
+                  about Carpooling
+                </li>
+              </ul>
+              </p>
             </div>
           </div>
         </div>
@@ -204,36 +191,17 @@
       </div><!-- /.row -->
     </div>
 
-    <!-- Contact -->
-    <div class="w3-container" id="contact" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
-      <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new
-        people!</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input w3-border" type="text" name="Name" required>
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
-        </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input class="w3-input w3-border" type="text" name="Message" required>
-        </div>
-        <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send
-          Message</button>
-      </form>
-    </div>
 
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b>Contact Us</b></h1>
+      <a class="btn btn-primary" href="/taxi/contact/">Go to Contact Us page</a>
+    </div>
     <!-- End page content -->
   </div>
 
   <!-- W3.CSS Container -->
   <div class="w3-dark-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
-    <p class="w3-right"><b>© Taxi Rental IITG</b></p>
+    <p class="w3-right"><b>©️ Taxi Rental IITG</b></p>
   </div>
 
   <script>
@@ -242,12 +210,12 @@
       document.getElementById("mySidebar").style.display = "block";
       document.getElementById("myOverlay").style.display = "block";
     }
-
+     
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
       document.getElementById("myOverlay").style.display = "none";
     }
-
+    
     // Modal Image Gallery
     function onClick(element) {
       document.getElementById("img01").src = element.src;
@@ -255,8 +223,8 @@
       var captionText = document.getElementById("caption");
       captionText.innerHTML = element.alt;
     }
-  </script>
-
+    </script>
+    
 </body>
 
 </html>

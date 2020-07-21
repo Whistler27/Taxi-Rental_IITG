@@ -1,0 +1,62 @@
+{% extends 'taxi/basic.html' %}
+
+{% block title %}Contact Page{% endblock %}
+
+{% block body %}
+<div class="w3-container" id="checkout">
+  <h2>Rent Your Car</h2>
+  <p>
+  <h4>If you have any questions, do not hesitate to ask them.</h4>
+  </p>
+  <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Guwahati, India <br>
+  <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +91 9818121317<br>
+  <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: adrirajc@gmail.com, ng24645@gmail.com<br>
+  <br>
+  <form method="post" action="/taxi/checkout/">
+    {% csrf_token %}
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <p><input class="w3-input w3-padding-12 w3-border" type="email" placeholder="Email" required name="Email">
+        </p>
+      </div>
+      <div class="form-group col-md-6">
+        <p><input class="w3-input w3-padding-12 w3-border" type="tel" placeholder="Phone Number" required
+            name="Phone Number">
+        </p>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputState">Destination</label>
+        <select id="destchoice" class="form-control" required name= "destination">
+          <option selected>Panbazaar</option>
+          <option>Jalukbari</option>
+          <option>Airport</option>
+          <option>PaltanBazaar</option>
+          <option>GS Road</option>
+          <option>Maligaon</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputState">Choose your car</label>
+        <select id="carchoice" class="form-control" required name="car_type">
+          <option selected>Maruti Alto</option>
+          <option>Swift Dzire</option>
+          <option>Innova</option>
+          <option>Indica</option>
+          <option>Carpool</option>
+        </select>
+      </div>
+    </div>
+    <p><button class="w3-button w3-red w3-padding-large" id="submit" type="submit">RENT NOW</button></p>
+  </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}

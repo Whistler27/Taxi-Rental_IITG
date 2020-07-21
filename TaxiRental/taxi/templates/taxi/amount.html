@@ -1,0 +1,74 @@
+{%extends 'taxi/basic.html' %}
+{% block title %}Bootstrap Example {% endblock %}
+
+
+{% block css %}
+<style>
+    button {
+        display: table;
+        margin: 0 auto
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-3 sidenav">
+            <h4><strong>Details of your car-rent</strong> </h4>
+            <ul class="nav nav-pills nav-stacked">
+                <br>
+                <li><b>Your Destination</b> : {{destination}}</li>
+                <br>
+                <li><b>Your Car</b> : {{car_type}}</li>
+                <br>
+                <li><b>Your amount</b> : {{amount}}</li>
+            </ul><br>
+
+        </div>
+
+        <div class="col-sm-9">
+            <h2><strong>What to do after getting OTP ?</strong></h2>
+            <br>
+            <p><b><i>After clicking the confirm button you will get a OTP on your email.After that you will be mapped to
+                        the nearest
+                        driver according to their availability.After reaching to your point our driver will call you,
+                        then you can access
+                        your ride by showing the OTP to the driver.Pay your driver the given amount after reaching
+                        destination and
+                        don't forget to give us feedback.Ok go on with your ride now...</i></b>
+            </p>
+            <br>
+            <br>
+            <br>
+            <h2><strong>How to pay ?</strong></h2>
+            <br>
+            <p><b><i>You can pay the driver by PayTM / Google Pay / PhonePe or by simply cash.</i></b>
+            </p>
+            <br>
+            <br>
+            <br>
+            <h2><strong>Still have doubts ?</strong></h2>
+            <p><b><i>
+                        <h4>If you have any questions, do not hesitate to ask them.</h4>
+                    </i></b></p>
+            <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Guwahati, India <br>
+            <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +91 9818121317<br>
+            <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: adrirajc@gmail.com,
+            ng24645@gmail.com<br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2><b>Confirm your ride and get OTP</b></h2>
+            <br>
+            <p align = "center">
+                <button type="submit" class="btn btn-danger">Confirm</button>
+            </p>
+            <br><br>
+        </div>
+    </div>
+</div>
+{% endblock %}
