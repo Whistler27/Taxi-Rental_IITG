@@ -48,9 +48,7 @@ class Contact(models.Model):
         return self.name
 
 class Order(models.Model):
-    
     phone_regex = RegexValidator(r'^[0-9]*$', 'Only numeric characters are allowed.')
-    
     ono = models.AutoField(primary_key=True)
     email = models.CharField(max_length=50)
     phone_no = models.CharField(max_length=10, null=False, validators=[phone_regex])
